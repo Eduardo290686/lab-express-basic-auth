@@ -1,15 +1,17 @@
-<form id="form" action="/signup" method="POST">
+<div class='form-container'>
+  <form id="form" action="/signup" method="POST">
 
-  <label for="username">Username</label>
-  <input type="text" name="username" placeholder="Your username">
+    <label for="username">Username</label>
+    <input type="text" name="username" placeholder="Your username">
 
-  <label for="password">Password</label>
-  <input type="password" name="password" placeholder="********">
+    <label for="password">Password</label>
+    <input type="password" name="password" placeholder="********">
 
-  <button type="submit">Create account</button>
+    <button type="submit">Create account</button>
 
-  {{#if errorMessage}}
-  <p>{{errorMessage}}</p>
-  {{/if}}
+    {{#if errorMessage}}
+    <p class='account-message'>{{errorMessage}}</p>
+    {{/if}}
 
-</form>
+  </form>
+</div>
